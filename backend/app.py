@@ -56,7 +56,10 @@ app.logger.info(f"Flask application starting with log level {log_level_str}")
 _db.init_app(app)
 jwt = JWTManager(app)
 socketio = SocketIO(
-    app, message_queue=settings.CELERY_BROKER_URL, async_mode="eventlet"
+    app,
+    message_queue=settings.CELERY_BROKER_URL,
+    async_mode="eventlet",
+    cors_allowed_origins="http://localhost:5173",
 )
 app.register_blueprint(auth_bp)
 configure_celery(app)
