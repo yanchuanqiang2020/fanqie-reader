@@ -2,4 +2,4 @@ __pycache__
 .ruff_cache
 node_modules
 data
-config.yaml
+config.yml
