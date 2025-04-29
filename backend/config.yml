@@ -1,0 +1,34 @@
+# 最大并发线程数
+max_workers: 3
+# 请求超时时间（秒）
+request_timeout: 15
+# 最大重试次数
+max_retries: 3
+# 最大冷却时间, 单位ms
+max_wait_time: 1200
+# 最小冷却时间, 单位ms
+min_wait_time: 1000
+# 最小连接超时时间
+min_connect_timeout: 3.05
+# 强制退出等待时间
+force_exit_timeout: 5
+# 是否启用优雅退出
+graceful_exit: true
+# 保存小说格式, 可选: [txt, epub]
+novel_format: epub
+# 是否以散装形式保存小说
+bulk_files: false
+# 是否自动清理缓存文件
+auto_clear_dump: true
+# 保存路径 (由Flask提供)
+save_path: /app/data/novel_downloads
+# 状态文件根路径 (由Flask提供)
+status_folder_path_base: /app/data/novel_status
+# 使用官方API
+use_official_api: true
+# 自动生成
+iid: '1461667874848122'
+# iid生成时间戳
+iid_spawn_time: '1745954855665'
+# API列表
+api_endpoints: []
